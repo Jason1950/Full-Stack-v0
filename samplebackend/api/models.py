@@ -11,7 +11,7 @@ def generate_unique_code():
     length = 6
     while True:
         code = ''.join(random.choices(string.ascii_uppercase, k=length))
-        code2 = 0
+        code2 = 1
         if Room.objects.filter(code=code).count() == 0 :
             break
     
